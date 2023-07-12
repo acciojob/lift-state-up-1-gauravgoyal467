@@ -9,12 +9,12 @@ const Child = ({showModal,setShowModal}) => {
     <div className="child">
         <h2>Child Component</h2>
         <button onclick={()=>handleBtnClick()} >Show Modal</button>
-        {showModal && 
-        <div>
+        showModal && 
+        (<div>
             <h1>Modal Content</h1>
             <p>This is modal content</p>
-        </div>
-        }
+        </div>)
+        
     </div>
   )
 }
