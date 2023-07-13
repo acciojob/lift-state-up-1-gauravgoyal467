@@ -8,7 +8,7 @@ const Child = ({showModal,setShowModal}) => {
         <button onClick={()=>setShowModal(!showModal)} >Show Modal</button>
         {showModal && 
         <div>
-            <h1>Modal Content</h1>
+            <h3>Modal Content</h3>
             <h3>This is modal content</h3>
         </div>}
         
